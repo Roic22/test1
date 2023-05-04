@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/*this is for the yellow box*/
+.container{
+    background: #FFF100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 48px 32px;
+    gap: 20px;
+    
+    width: 100%;
+    height: 389px;
+    flex: auto;
+    order: 2;
+    flex-grow: 0;
+    }
+
+    /*elements of the yellow box*/
+h1{
+    width: 676px;
+    height: 83px;
+    font-family: 'Madera for Yello';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+    
+
+.container p{
+    width: 371px;
+    height: 24px;
+    font-family: 'Madera for Yello';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+    
+
+    /*this is for the ash box*/
+.subcontainer{
+    width: 100%;
+    height: 198px;
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 48px 32px;
+    gap: 60px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+/*element of the ash box*/
+.subcontainer p{
+    width: 350px;
+    text-align: center;
+}
+    
+
+/* for small screens */
+
+@media (max-width: 500px){
+
+    /*this is for the yellow box*/
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 360px;
+    padding-top: 8px;  
+    gap: 10px;
+    align-items: start;
+}
+
+    /*elements of the yellow box*/
+h1{
+    width: 295px;
+    height: 104px;
+    font-size: 30px;
+}
+
+.container p{
+    width: 300px;
+    height: 15px;
+    font-size: 15px;
+    padding-top:-1rem;
+}
+
+.container img{
+    width: 100%;
+    height: 150px;
+}
+
+/*this is for the ash box*/
+.subcontainer{
+    width: 100%;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 8px; 
+    align-items: start;
+}
+    
+/*elements of the ash box*/
+
+.subcontainer h2{
+    width: 100%;
+    height: auto;
+    font-family: 'Madera for Yello';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.subcontainer span{
+    width: auto;
+    height: auto;
+    font-family: 'Madera for Yello';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%; 
+    color: #000000;
+    }
+
+}
